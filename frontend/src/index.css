@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.leaflet-container {
+    background: #fff;
+    z-index: 10;
+}
+
+.leaflet-marker-icon {
+    background: url('https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png');
+    background-size: contain;
+    width: 25px;
+    height: 41px;
+}
+
+.leaflet-marker-shadow {
+    background: url('https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png');
+    background-size: contain;
+    width: 41px;
+    height: 41px;
+}
+
+header {
+    z-index: 1000;
+}
+
+@media (max-width: 640px) {
+    header nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
